@@ -5,9 +5,8 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 const CategoryMenu = () => {
   return (
     <div className="ml-4">
-      <Menu id="23455431">
+      <Menu>
         <MenuButton
-          id="2345543"
           px={4}
           py={2}
           transition="all 0.2s"
@@ -20,8 +19,8 @@ const CategoryMenu = () => {
           Kategorie <ChevronDownIcon />
         </MenuButton>
         <MenuList>
-          <Menu id="eloooohghghjghjghjghjghj" isLazy>
-            <MenuButton px={4} py={2} id="23455433">
+          <Menu isLazy>
+            <MenuButton px={4} py={2}>
               Twoje miasto
             </MenuButton>
             <MenuList>
@@ -33,8 +32,8 @@ const CategoryMenu = () => {
               <MenuItem>Uroda i spa</MenuItem>
             </MenuList>
           </Menu>
-          <Menu id="23455432">
-            <MenuButton px={4} py={2} id="23425543">
+          <Menu>
+            <MenuButton px={4} py={2}>
               Hotele i Podróże
             </MenuButton>
             <MenuList>
@@ -46,8 +45,8 @@ const CategoryMenu = () => {
               <MenuItem>Na łonie natury</MenuItem>
             </MenuList>
           </Menu>
-          <Menu id="234554333">
-            <MenuButton px={4} py={2} id="12345543">
+          <Menu>
+            <MenuButton px={4} py={2}>
               Kody Rabatowe
             </MenuButton>
             <MenuList>
@@ -59,8 +58,8 @@ const CategoryMenu = () => {
               <MenuItem>Kod rabatowy empik</MenuItem>
             </MenuList>
           </Menu>
-          <Menu id="23455434">
-            <MenuButton px={4} py={2} id="23455843">
+          <Menu>
+            <MenuButton px={4} py={2}>
               Bilety
             </MenuButton>
             <MenuList>
