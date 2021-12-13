@@ -1,13 +1,13 @@
 import Navbar from "../components/Navbar/Navbar";
-import DealCard from "../components/DealCard/DealCard";
 import Heading from "../components/Heading";
+import DealList from "../components/DealList";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
       <Heading />
-      <DealCard />
+      <DealList />
     </div>
   );
 }
