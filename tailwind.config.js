@@ -9,6 +9,9 @@ module.exports = {
           DEFAULT: "#53A318",
           dark: "#318200",
         },
+        purple: {
+          DEFAULT: "#7561DB",
+        },
       },
     },
   },
