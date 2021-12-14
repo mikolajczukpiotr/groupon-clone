@@ -33,11 +33,7 @@ const iconMap = {
 };
 
 const Type = ({ type }) => {
-  return (
-    <div display="flex" alignItems="center">
-      {iconMap[type]}
-    </div>
-  );
+  return <div>{iconMap[type]}</div>;
 };
 
 export default Type;
