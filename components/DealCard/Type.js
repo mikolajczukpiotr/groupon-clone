@@ -1,6 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/icons";
+
 const UpIcon = (props) => (
   <Icon viewBox="0 0 16 16" {...props}>
     <path
@@ -10,31 +11,29 @@ const UpIcon = (props) => (
   </Icon>
 );
 const PopularIcon = (props) => (
-    <Icon viewBox="0 1 16 16" {...props}>
-        <path
-            fill="rgba(102,80,215,1.0)"
-            d="M8.8 13.57h2.43V15H4.77v-1.43h2.7v-2.01a4.39 4.39 0 0 1-3.81-2.7C2.4 8.54 1 7.66 1 5.66V3h2.42V1h8.89v2H15v2.67c0 2.15-1.64 3-2.95 3.25a4.33 4.33 0 0 1-3.24 2.56v2.1zM3.43 4.33H2.26v1.34c0 .96.57 1.46 1.16 1.72V4.33zm8.89 3.15c.68-.22 1.43-.72 1.43-1.81V4.33h-1.43v3.15z"
-        />
-    </Icon>
+  <Icon viewBox="0 1 16 16" {...props}>
+    <path
+      fill="rgba(102,80,215,1.0)"
+      d="M8.8 13.57h2.43V15H4.77v-1.43h2.7v-2.01a4.39 4.39 0 0 1-3.81-2.7C2.4 8.54 1 7.66 1 5.66V3h2.42V1h8.89v2H15v2.67c0 2.15-1.64 3-2.95 3.25a4.33 4.33 0 0 1-3.24 2.56v2.1zM3.43 4.33H2.26v1.34c0 .96.57 1.46 1.16 1.72V4.33zm8.89 3.15c.68-.22 1.43-.72 1.43-1.81V4.33h-1.43v3.15z"
+    />
+  </Icon>
 );
 
-const Type = ({ type }) => {
-  const iconMap = {
-    best: (
-      <Box className="text-purple">
-        <UpIcon className="mr-1" /> Popularny
-      </Box>
-    ),
-    popular: <Box className="text-purple">
-        <PopularIcon className="mr-1" /> Najlepsze z Groupon
-    </Box>,
-  };
+const iconMap = {
+  best: (
+    <Box className="text-purple">
+      <UpIcon className="mr-1" /> Popularny
+    </Box>
+  ),
+  popular: (
+    <Box className="text-purple">
+      <PopularIcon className="mr-1" /> Najlepsze z Groupon
+    </Box>
+  ),
+};
 
-  return (
-    <div display="flex" alignItems="center">
-      {iconMap.[type]}
-    </div>
-  );
+const Type = ({ type }) => {
+  return <div>{iconMap[type]}</div>;
 };
 
 export default Type;
