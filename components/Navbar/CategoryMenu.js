@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
+import { Box, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
 const CategoryMenu = () => {

@@ -1,7 +1,11 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
+import DealCard from "../components/DealCard/DealCard";
 
 export default function Home() {
   return (
-      <Navbar/>
-  )
+    <div>
+      <Navbar />
+      <DealCard />
+    </div>
+  );
 }
