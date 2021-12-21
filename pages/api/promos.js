@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-const deals = [
+const promos = [
   {
     title: "wSPAniały Tydzień!",
     subTitle: "Najlepsze Masae i SPA",
@@ -32,5 +32,5 @@ const deals = [
 ];
 
 export default function handler(req, res) {
-  res.status(200).json(deals);
+  res.status(200).json(promos);
 }
