@@ -24,7 +24,7 @@ const deals = [
     image: {
       150: "https://via.placeholder.com/150",
       300: "https://via.placeholder.com/300",
-      600: "https://via.placeholder.com/600",
+      600: "https://via.placeholder.com/800x600",
       1200: "https://via.placeholder.com/1200",
     },
   },
@@ -52,7 +52,7 @@ const deals = [
     image: {
       150: "https://via.placeholder.com/150",
       300: "https://via.placeholder.com/300",
-      600: "https://via.placeholder.com/600",
+      600: "https://via.placeholder.com/800x600",
       1200: "https://via.placeholder.com/1200",
     },
   },
@@ -79,7 +79,7 @@ const deals = [
     image: {
       150: "https://via.placeholder.com/150",
       300: "https://via.placeholder.com/300",
-      600: "https://via.placeholder.com/600",
+      600: "https://via.placeholder.com/800x600",
       1200: "https://via.placeholder.com/1200",
     },
   },

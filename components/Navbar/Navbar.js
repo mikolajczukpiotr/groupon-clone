@@ -7,7 +7,7 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <div className="border-solid border-b border-gray-200">
-      <div className="flex p-5 w-2/3 m-auto">
+      <div className="flex p-5">
         <div className="ml-auto">
           <Image src="/logo.svg" width={128} height={35} />
         </div>

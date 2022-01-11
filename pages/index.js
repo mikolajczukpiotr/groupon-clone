@@ -5,7 +5,7 @@ import PromoList from "../components/PromoList";
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-screen p-4 3xl:w-1330 m-auto">
       <Navbar />
       <Heading />
       <DealList />

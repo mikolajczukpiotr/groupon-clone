@@ -32,7 +32,7 @@ const DealList = () => {
       </>
     );
   return (
-    <div className="flex p-auto w-2/3 m-auto">
+    <div className="flex justify-between gap-4">
       <DealCard property={data[0]} />
       <DealCard property={data[1]} />
       <DealCard property={data[2]} />

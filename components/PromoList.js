@@ -32,7 +32,7 @@ const PromoList = () => {
       </>
     );
   return (
-    <div className="flex justify-center m-auto">
+    <div className="flex gap-2 mt-2">
       <PromoCard property={data[0]} />
       <PromoCard property={data[1]} />
     </div>

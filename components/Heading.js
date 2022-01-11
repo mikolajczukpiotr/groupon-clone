@@ -34,7 +34,7 @@ const Heading = () => {
   const words = headingText.split(" ");
   const [first, second, ...rest] = words;
   return (
-    <h1 className="flex p-5 w-2/3 m-auto text-2xl">
+    <h1 className="flex py-5 text-2xl">
       <span className="font-bold">
         {" "}
         {first} {second}
