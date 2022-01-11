@@ -18,6 +18,8 @@ export default function Home() {
         return <Heading headingText={el.value} />;
       case "deals":
         return <DealList id={el.value.id} />;
+      case "promos":
+        return <PromoList />;
       default:
         return null;
     }
