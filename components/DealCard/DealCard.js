@@ -8,7 +8,7 @@ import Address from "./Address";
 
 const DealCard = ({ property }) => {
   return (
-    <Box maxW="sm" overflow="hidden" className="m-2">
+    <Box maxW="sm" overflow="hidden">
       <Image borderRadius="lg" src={property.image[600]} />
       <Box p="1">
         <Type type={property.type} />

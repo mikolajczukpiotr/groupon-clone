@@ -13,6 +13,12 @@ module.exports = {
           DEFAULT: "#7561DB",
         },
       },
+      spacing: {
+        1330: "1330px",
+      },
+      screens: {
+        "3xl": "1330px",
+      },
     },
   },
   variants: {

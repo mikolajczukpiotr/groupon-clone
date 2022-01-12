@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar/Navbar";
 import Heading from "../components/Heading";
 import DealList from "../components/DealList";
+import PromoList from "../components/PromoList";
 import useSWR from "swr";
 import React from "react";
 import { fetcher } from "../services/fetch";
@@ -17,12 +18,14 @@ export default function Home() {
         return <Heading headingText={el.value} />;
       case "deals":
         return <DealList id={el.value.id} />;
+      case "promos":
+        return <PromoList />;
       default:
         return null;
     }
   });
   return (
-    <div>
+    <div className="w-screen p-4 3xl:w-1330 m-auto">
       <Navbar />
       {components}
     </div>
