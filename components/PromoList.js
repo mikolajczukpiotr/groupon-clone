@@ -20,7 +20,7 @@ const PromoList = () => {
   const promoCards = data.map((el) => {
     return <PromoCard key={el.title} property={el} />;
   });
-  return <div className="flex gap-2 mt-2">{promoCards}</div>;
+  return <div className="flex mt-2 gap-2 flex-wrap">{promoCards}</div>;
 };
 
 export default PromoList;
