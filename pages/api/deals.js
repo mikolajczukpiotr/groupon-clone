@@ -3,6 +3,7 @@
 const deals = [
   {
     title: "ESC House",
+    slug: "esc-house",
     shortDescription: "Pokój Zagadki Sherlocka Holmesa",
     address: {
       city: "Zakopane",
@@ -30,6 +31,7 @@ const deals = [
   },
   {
     title: "W.Kruk",
+    slug: "w-kruk",
     shortDescription:
       "Karta podarunkowa warta 100zl na dowolny prodkut ze sklepu W. kruk",
     address: {
@@ -58,6 +60,7 @@ const deals = [
   },
   {
     title: "Aqua Park Zakopane",
+    slug: "aqua-park-zakopane",
     shortDescription: "Termy: 2,5-godzinny bilet wstępu na basen dla 1 osoby",
     address: {
       city: "Zakopane",
