@@ -3,7 +3,7 @@ import { Image } from "@chakra-ui/react";
 
 const Thumbnail = ({ arr, image, index }) => {
   return (
-    <div className="flex m-2 ">
+    <div className="flex mt-2 ">
       {arr.map((imgsrc, i) => (
         <div className="m-1">
           <Image
