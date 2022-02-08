@@ -69,6 +69,12 @@ const deals = [
       "https://via.placeholder.com/700x462",
       "https://via.placeholder.com/700x463",
     ],
+    // commentsMetaInfo: {
+    //
+    // },
+    // comments:[
+    //   {name:}
+    // ]
   },
   {
     title: "Aqua Park Zakopane",

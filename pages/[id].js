@@ -30,12 +30,14 @@ const DealSite = () => {
       <div className="my-2 ">
         <Slider data={data.gallery} />
       </div>
-      <div className="my-14">
-        <Alert status="info" width="70%" borderRadius="lg">
-          <AlertIcon />
-          <AlertDescription montSize="sm">{data.alert}</AlertDescription>
-        </Alert>
-      </div>
+      {data.alert && (
+        <div className="my-14">
+          <Alert status="info" width="70%" borderRadius="lg">
+            <AlertIcon />
+            <AlertDescription montSize="sm">{data.alert}</AlertDescription>
+          </Alert>
+        </div>
+      )}
       <div className="font-bold text-2xl">Wyrózniki</div>
       <div> </div>
     </div>
