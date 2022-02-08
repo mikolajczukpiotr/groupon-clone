@@ -5,6 +5,9 @@ import { StarIcon } from "@chakra-ui/icons";
 const Rating = ({ rating }) => {
   return (
     <Box display="flex" alignItems="center">
+      <Box mr="1" color="gray.600" fontSize="sm">
+        {rating.rating}
+      </Box>
       {Array(5)
         .fill("")
         .map((_, i) => (
