@@ -10,7 +10,7 @@ import Link from "next/link";
 const DealCard = ({ property }) => {
   return (
     <Link href={`/${property.slug}`}>
-      <Box maxW="sm" overflow="hidden">
+      <Box maxW="sm" overflow="hidden" className="hover: cursor-pointer">
         <Image borderRadius="lg" src={property.image[600]} />
         <Box p="1">
           <Type type={property.type} />
