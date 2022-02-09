@@ -35,6 +35,22 @@ const deals = [
     ],
     alert:
       "Firma tego partnera jest czynna i podejmuje działania mające na celu ochronę zdrowia poprzez przestrzeganie wszystkich obowiązujących przepisów prawa i regulacji dotyczących bezpieczeństwa w obliczu COVID-19.",
+    discriminate:
+      "Okazja do obejrzenia na dużym ekranie aktualnych i nadchodzących hitów filmowych przez 7 dni w tygodniu",
+    commentsMetaInfo: {
+      numberOfRatings: 76,
+      rating: 4.7,
+    },
+    comments: [
+      {
+        name: "Anna",
+        numberOfRatings: 11,
+        reviews: 6,
+        rating: 5,
+        date: "12-01-2022",
+        content: "Polecam, bardzo dobry produkt",
+      },
+    ],
   },
   {
     title: "W.Kruk",
@@ -69,12 +85,6 @@ const deals = [
       "https://via.placeholder.com/700x462",
       "https://via.placeholder.com/700x463",
     ],
-    // commentsMetaInfo: {
-    //
-    // },
-    // comments:[
-    //   {name:}
-    // ]
   },
   {
     title: "Aqua Park Zakopane",
