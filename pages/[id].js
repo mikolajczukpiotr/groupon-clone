@@ -14,8 +14,10 @@ const DealSite = () => {
   const { query } = useRouter();
   const { id } = query;
   const { data, error } = useSWR(`/api/deals/${id}`, fetcher);
+
   if (error) return <CustomAlert alertMessage={"Coś poszło nie tak!  :("} />;
   if (!data) return <Loading />;
+
   const comments = data.comments.map((el) => {
     return <Comment data={el} />;
   });

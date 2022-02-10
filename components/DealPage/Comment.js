@@ -1,6 +1,10 @@
 import React from "react";
 import { Box, Button } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
+import dayjs from "dayjs";
+
+var relativeTime = require("dayjs/plugin/relativeTime");
+dayjs.extend(relativeTime);
 
 const Comment = ({ data }) => {
   return (
@@ -48,7 +52,7 @@ const Comment = ({ data }) => {
               />
             ))}
         </div>
-        <div className="text-sm">• {data.date}</div>
+        <div className="text-sm">• {dayjs(data.date).fromNow()}</div>
       </div>
       <div>{data.content}</div>
       <Button variant="outline" size="xs" className="mt-3">

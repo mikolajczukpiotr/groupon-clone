@@ -48,7 +48,7 @@ const deals = [
         numberOfRatings: 11,
         reviews: 6,
         rating: 5,
-        date: "12-01-2022",
+        date: "2021-02-10",
         content: "Polecam, bardzo dobry produkt",
       },
       {
@@ -57,7 +57,7 @@ const deals = [
         numberOfRatings: 41,
         reviews: 7,
         rating: 2,
-        date: "12-01-2022",
+        date: "2021-02-10",
         content: "Polecam, bardzo dobry produkt",
       },
       {
@@ -66,7 +66,7 @@ const deals = [
         numberOfRatings: 11,
         reviews: 36,
         rating: 4,
-        date: "12-01-2022",
+        date: "2021-12-12",
         content: "Polecam, bardzo dobry produkt",
       },
     ],
