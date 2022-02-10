@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Box, Button } from "@chakra-ui/react";
-import { StarIcon } from "@chakra-ui/icons";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
+import { CommentIcon, LikeIcon, RatingIcon } from "../Icons";
+import { StarIcon } from "@chakra-ui/icons";
 
 const Comment = ({ data }) => {
   dayjs.extend(relativeTime);
@@ -25,7 +26,7 @@ const Comment = ({ data }) => {
           <div className="flex flex-row">
             <div className="font-bold mr-1">{data.name}</div>
             {data.topReviewer && (
-              <div className="flex flex-row">
+              <div className="flex flex-row m-0.5">
                 •
                 <div className="bg-purple p-1 text-white w-max text-xs font-medium rounded-md ml-1">
                   Top Reviewer
@@ -34,13 +35,21 @@ const Comment = ({ data }) => {
             )}
           </div>
 
-          <div className="flex flex-row text-sm">
-            <div>{data.numberOfRatings} Oceny</div>
-            <div>{data.reviews} reviews</div>
+          <div className="flex flex-row text-sm text-gray-500 ">
+            <div className="flex ite">
+              <div className="mr-1">
+                <RatingIcon />
+              </div>
+              {data.numberOfRatings} Oceny
+            </div>
+            <div>
+              <CommentIcon margin="1" />
+              {data.reviews} reviews
+            </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-row my-2 items-center">
+      <div className="flex flex-row my-1.5 items-center">
         <div>
           {Array(5)
             .fill("")
@@ -59,11 +68,14 @@ const Comment = ({ data }) => {
       <Button
         variant="outline"
         size="xs"
-        className="mt-3"
-        bg={activeButton ? "gold" : ""}
+        className="mt-3 items-center"
+        bg={activeButton ? "yellow.300" : ""}
         onClick={() => setActiveButton(!activeButton)}
       >
-        Pomocna?
+        <div className="items-center flex">
+          <LikeIcon />
+          <div className="ml-1 font-light text-gray-500">Pomocna?</div>
+        </div>
       </Button>
     </div>
   );
