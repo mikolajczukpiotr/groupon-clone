@@ -16,6 +16,9 @@ const DealSite = () => {
   const { data, error } = useSWR(`/api/deals/${id}`, fetcher);
   if (error) return <CustomAlert alertMessage={"Coś poszło nie tak!  :("} />;
   if (!data) return <Loading />;
+  const comments = data.comments.map((el) => {
+    return <Comment data={el} />;
+  });
   return (
     <div className="m-6 w-7/12">
       <HeadingDealPage data={data} />
@@ -26,9 +29,7 @@ const DealSite = () => {
       <div className="font-bold text-2xl my-2">Wyrózniki</div>
       <div>{data.discriminate}</div>
       <CommentInfo data={data} />
-      <Comment data={data.comments[0]} />
-      <Comment data={data.comments[1]} />
-      <Comment data={data.comments[2]} />
+      {comments}
     </div>
   );
 };
