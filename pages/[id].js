@@ -4,16 +4,11 @@ import useSWR from "swr";
 import { fetcher } from "../services/fetch";
 import CustomAlert from "../components/CustomAlert";
 import Loading from "../components/Loading";
-import Type from "../components/DealCard/Type";
-import Rating from "../components/DealCard/Rating";
-import Address from "../components/DealCard/Address";
 import Slider from "../components/DealPage/Slider";
-import { Box, Select } from "@chakra-ui/react";
-import { StarIcon } from "@chakra-ui/icons";
-import { SuccesIcon } from "../components/Icons";
 import AlertDealPage from "../components/DealPage/AlertDealPage";
 import HeadingDealPage from "../components/DealPage/HeadingDealPage";
 import CommentInfo from "../components/DealPage/CommentInfo";
+import Comment from "../components/DealPage/Comment";
 
 const DealSite = () => {
   const { query } = useRouter();
@@ -31,6 +26,9 @@ const DealSite = () => {
       <div className="font-bold text-2xl my-2">Wyrózniki</div>
       <div>{data.discriminate}</div>
       <CommentInfo data={data} />
+      <Comment data={data.comments[0]} />
+      <Comment data={data.comments[1]} />
+      <Comment data={data.comments[2]} />
     </div>
   );
 };

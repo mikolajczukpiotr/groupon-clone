@@ -44,9 +44,28 @@ const deals = [
     comments: [
       {
         name: "Anna",
+        topReviewer: true,
         numberOfRatings: 11,
         reviews: 6,
         rating: 5,
+        date: "12-01-2022",
+        content: "Polecam, bardzo dobry produkt",
+      },
+      {
+        name: "Jan",
+        topReviewer: "",
+        numberOfRatings: 41,
+        reviews: 7,
+        rating: 2,
+        date: "12-01-2022",
+        content: "Polecam, bardzo dobry produkt",
+      },
+      {
+        name: "Karolina",
+        topReviewer: "",
+        numberOfRatings: 11,
+        reviews: 36,
+        rating: 4,
         date: "12-01-2022",
         content: "Polecam, bardzo dobry produkt",
       },
