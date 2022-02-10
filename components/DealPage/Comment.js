@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Button } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 import dayjs from "dayjs";
-
-var relativeTime = require("dayjs/plugin/relativeTime");
-dayjs.extend(relativeTime);
+import relativeTime from "dayjs/plugin/relativeTime";
 
 const Comment = ({ data }) => {
+  dayjs.extend(relativeTime);
+  const [activeButton, setActiveButton] = useState(false);
+
   return (
     <div className="mt-4">
       <div className="flex flex-row">
@@ -55,7 +56,13 @@ const Comment = ({ data }) => {
         <div className="text-sm">• {dayjs(data.date).fromNow()}</div>
       </div>
       <div>{data.content}</div>
-      <Button variant="outline" size="xs" className="mt-3">
+      <Button
+        variant="outline"
+        size="xs"
+        className="mt-3"
+        bg={activeButton ? "gold" : ""}
+        onClick={() => setActiveButton(!activeButton)}
+      >
         Pomocna?
       </Button>
     </div>
