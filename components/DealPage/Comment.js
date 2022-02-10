@@ -6,8 +6,15 @@ const Comment = ({ data }) => {
   return (
     <div className="mt-4">
       <div className="flex flex-row">
-        <Box borderRadius="50%" bg="#e6e7e8" w={10} h={10} fontWeight="700">
-          <div className=" text-center">{data.name.slice(0, 1)}</div>
+        <Box
+          borderRadius="50%"
+          bg="#e6e7e8"
+          w={10}
+          h={10}
+          fontWeight="700"
+          className="flex justify-center items-center"
+        >
+          <div className="">{data.name.slice(0, 1)}</div>
         </Box>
         <div className="flex flex-col ml-3">
           <div className="flex flex-row">
@@ -28,7 +35,7 @@ const Comment = ({ data }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row my-2">
+      <div className="flex flex-row my-2 items-center">
         <div>
           {Array(5)
             .fill("")
@@ -45,7 +52,6 @@ const Comment = ({ data }) => {
       </div>
       <div>{data.content}</div>
       <Button variant="outline" size="xs" className="mt-3">
-        {" "}
         Pomocna?
       </Button>
     </div>

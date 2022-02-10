@@ -7,10 +7,6 @@ export default function Slider({ data }) {
   const [index, setIndex] = useState(0);
   const [hovered, setHovered] = useState(false);
 
-  useEffect(() => {
-    setIndex(0);
-  }, []);
-
   const next = () => {
     if (index === data.length - 1) {
       setIndex(0);
