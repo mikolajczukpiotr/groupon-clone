@@ -19,6 +19,9 @@ module.exports = {
       screens: {
         "3xl": "1330px",
       },
+      maxWidth: {
+        700: "700px",
+      },
     },
   },
   variants: {
