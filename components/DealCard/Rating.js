@@ -1,6 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
+import Stars from "../Stars";
 
 const Rating = ({ rating }) => {
   return (
@@ -8,15 +9,7 @@ const Rating = ({ rating }) => {
       <Box mr="1" color="gray.600" fontSize="sm">
         {rating.rating}
       </Box>
-      {Array(5)
-        .fill("")
-        .map((_, i) => (
-          <StarIcon
-            boxSize={3}
-            key={i}
-            color={i < rating.rating ? "gold" : "gray.300"}
-          />
-        ))}
+      <Stars boxSize={3} margin={0} rating={rating.rating} />
       <Box ml="2" color="gray.600" fontSize="sm">
         {rating.numberOfRatings} oceny
       </Box>

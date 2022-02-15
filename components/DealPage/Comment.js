@@ -4,11 +4,15 @@ import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import { CommentIcon, LikeIcon, RatingIcon } from "../Icons";
 import { StarIcon } from "@chakra-ui/icons";
+import Stars from "../Stars";
 
+function getFirstLetter(props) {
+  return props.slice(0, 1);
+}
+
+dayjs.extend(relativeTime);
 const Comment = ({ data }) => {
-  dayjs.extend(relativeTime);
   const [activeButton, setActiveButton] = useState(false);
-
   return (
     <div className="mt-4">
       <div className="flex flex-row">
@@ -20,7 +24,7 @@ const Comment = ({ data }) => {
           fontWeight="700"
           className="flex justify-center items-center"
         >
-          <div className="">{data.name.slice(0, 1)}</div>
+          <div className="">{getFirstLetter(data.name)}</div>
         </Box>
         <div className="flex flex-col ml-3">
           <div className="flex flex-row">
@@ -50,18 +54,7 @@ const Comment = ({ data }) => {
         </div>
       </div>
       <div className="flex flex-row my-1.5 items-center">
-        <div>
-          {Array(5)
-            .fill("")
-            .map((_, i) => (
-              <StarIcon
-                boxSize={3.5}
-                key={i}
-                margin={0.5}
-                color={i < data.rating ? "gold" : "gray.300"}
-              />
-            ))}
-        </div>
+        <Stars boxSize={3.5} margin={0.5} rating={data.rating} />
         <div className="text-sm">• {dayjs(data.date).fromNow()}</div>
       </div>
       <div>{data.content}</div>
@@ -69,7 +62,7 @@ const Comment = ({ data }) => {
         variant="outline"
         size="xs"
         className="mt-3 items-center"
-        bg={activeButton ? "yellow.300" : ""}
+        bg={activeButton ? "green.100" : ""}
         onClick={() => setActiveButton(!activeButton)}
       >
         <div className="items-center flex">

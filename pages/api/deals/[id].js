@@ -43,6 +43,7 @@ const deals = [
     },
     comments: [
       {
+        id: 1,
         name: "Anna",
         topReviewer: true,
         numberOfRatings: 11,
@@ -52,6 +53,7 @@ const deals = [
         content: "Polecam, bardzo dobry produkt",
       },
       {
+        id: 2,
         name: "Jan",
         topReviewer: "",
         numberOfRatings: 41,
@@ -61,6 +63,7 @@ const deals = [
         content: "Polecam, bardzo dobry produkt",
       },
       {
+        id: 3,
         name: "Karolina",
         topReviewer: "",
         numberOfRatings: 11,
@@ -68,6 +71,33 @@ const deals = [
         rating: 4,
         date: "2021-12-12",
         content: "Polecam, bardzo dobry produkt",
+      },
+    ],
+    priceDetails: [
+      {
+        name: "1-godzinne wejście dla 4 osób na basen Aquatonic (pon.-czw.)",
+        price: 33.99,
+        sold: 440,
+      },
+      {
+        name: "1-godzinne wejście dla 4 osób na basen Aquatonic (pt.-ndz.)",
+        price: 43.99,
+        sold: 510,
+      },
+      {
+        name: "1-godzinne wejście dla 6 osób na basen Aquatonic (pon.-czw.)",
+        price: 48.99,
+        sold: 60,
+      },
+      {
+        name: "1-godzinne wejście dla 4 osób na basen Aquatonic (pt.-ndz.)",
+        price: 62.99,
+        sold: 40,
+      },
+      {
+        name: "1-godzinne wejście dla 4 osób na basen Aquatonic (pon.-czw.)",
+        price: 48.99,
+        sold: 440,
       },
     ],
   },

@@ -9,6 +9,7 @@ import AlertDealPage from "../components/DealPage/AlertDealPage";
 import HeadingDealPage from "../components/DealPage/HeadingDealPage";
 import CommentInfo from "../components/DealPage/CommentInfo";
 import Comment from "../components/DealPage/Comment";
+import { Radio, RadioGroup } from "@chakra-ui/react";
 
 const DealSite = () => {
   const { query } = useRouter();
@@ -19,19 +20,23 @@ const DealSite = () => {
   if (!data) return <Loading />;
 
   const comments = data.comments.map((el) => {
-    return <Comment data={el} />;
+    return <Comment key={el.id} data={el} />;
   });
   return (
-    <div className="m-6 w-7/12">
+    <div className="m-6">
       <HeadingDealPage data={data} />
-      <div className="my-2 ">
-        <Slider data={data.gallery} />
+      <div className=" flex">
+        <div className=" w-7/12">
+          <div className="my-2 ">
+            <Slider data={data.gallery} />
+          </div>
+          {data.alert && <AlertDealPage alert={data} />}
+          <div className="font-bold text-2xl my-2">Wyrózniki</div>
+          <div>{data.discriminate}</div>
+          <CommentInfo data={data} />
+          {comments}
+        </div>
       </div>
-      {data.alert && <AlertDealPage alert={data} />}
-      <div className="font-bold text-2xl my-2">Wyrózniki</div>
-      <div>{data.discriminate}</div>
-      <CommentInfo data={data} />
-      {comments}
     </div>
   );
 };

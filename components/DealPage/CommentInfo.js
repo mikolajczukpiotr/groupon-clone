@@ -2,6 +2,7 @@ import React from "react";
 import { StarIcon } from "@chakra-ui/icons";
 import { Box, Select } from "@chakra-ui/react";
 import { SuccesIcon } from "../Icons";
+import Stars from "../Stars";
 
 const CommentInfo = ({ data }) => {
   return (
@@ -13,19 +14,12 @@ const CommentInfo = ({ data }) => {
             {data.commentsMetaInfo.rating}
           </div>
           <div className="flex flex-col m-1">
-            <div>
-              {Array(5)
-                .fill("")
-                .map((_, i) => (
-                  <StarIcon
-                    boxSize={5}
-                    key={i}
-                    margin={0.5}
-                    color={
-                      i < data.commentsMetaInfo.rating ? "gold" : "gray.300"
-                    }
-                  />
-                ))}
+            <div className="flex">
+              <Stars
+                boxSize={5}
+                margin={0.5}
+                rating={data.commentsMetaInfo.rating}
+              />
             </div>
             <div className="text-sm">
               {data.commentsMetaInfo.numberOfRatings} Opinii
