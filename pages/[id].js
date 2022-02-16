@@ -9,7 +9,7 @@ import AlertDealPage from "../components/DealPage/AlertDealPage";
 import HeadingDealPage from "../components/DealPage/HeadingDealPage";
 import CommentInfo from "../components/DealPage/CommentInfo";
 import Comment from "../components/DealPage/Comment";
-import { Radio, RadioGroup } from "@chakra-ui/react";
+import Option from "../components/DealPage/Option";
 
 const DealSite = () => {
   const { query } = useRouter();
@@ -26,7 +26,7 @@ const DealSite = () => {
     <div className="m-6">
       <HeadingDealPage data={data} />
       <div className=" flex">
-        <div className=" w-7/12">
+        <div className=" w-8/12">
           <div className="my-2 ">
             <Slider data={data.gallery} />
           </div>
@@ -35,6 +35,9 @@ const DealSite = () => {
           <div>{data.discriminate}</div>
           <CommentInfo data={data} />
           {comments}
+        </div>
+        <div className="ml-6 mt-4">
+          <Option data={data.priceDetails[0]} />
         </div>
       </div>
     </div>
