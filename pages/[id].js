@@ -26,7 +26,7 @@ const DealSite = () => {
     <div className="m-6">
       <HeadingDealPage data={data} />
       <div className=" flex">
-        <div className=" w-8/12">
+        <div className=" w-2/3">
           <div className="my-2 ">
             <Slider data={data.gallery} />
           </div>
