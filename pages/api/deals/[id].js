@@ -75,26 +75,31 @@ const deals = [
     ],
     priceDetails: [
       {
+        id: 1,
         name: "1-godzinne wejście dla 4 osób na basen Aquatonic (pon.-czw.)",
         price: 33.99,
         sold: 440,
       },
       {
+        id: 2,
         name: "1-godzinne wejście dla 4 osób na basen Aquatonic (pt.-ndz.)",
         price: 43.99,
         sold: 510,
       },
       {
+        id: 3,
         name: "1-godzinne wejście dla 6 osób na basen Aquatonic (pon.-czw.)",
         price: 48.99,
         sold: 60,
       },
       {
+        id: 4,
         name: "1-godzinne wejście dla 4 osób na basen Aquatonic (pt.-ndz.)",
         price: 62.99,
         sold: 40,
       },
       {
+        id: 5,
         name: "1-godzinne wejście dla 4 osób na basen Aquatonic (pon.-czw.)",
         price: 48.99,
         sold: 440,
