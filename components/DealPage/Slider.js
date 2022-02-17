@@ -25,7 +25,7 @@ export default function Slider({ data }) {
   return (
     <div>
       <div
-        className="relative max-w-700"
+        className="relative w-full"
         onMouseEnter={() => {
           setHovered(true);
         }}
@@ -38,6 +38,7 @@ export default function Slider({ data }) {
             borderRadius="lg"
             className="transition duration-500 ease-in-out"
             src={data[index]}
+            width="100%"
           />
         </div>
         <div
