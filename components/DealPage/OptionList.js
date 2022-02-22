@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Option from "./Option";
-import { Button } from "@chakra-ui/react";
+import { Button, Divider } from "@chakra-ui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 
 const OptionList = ({ priceDetails }) => {
@@ -42,6 +42,9 @@ const OptionList = ({ priceDetails }) => {
             )}
           </Button>
         ) : null}
+      </div>
+      <div>
+        {optionList.length > 3 ? <Divider borderColor="gray.300" /> : null}
       </div>
     </div>
   );
