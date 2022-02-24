@@ -2,6 +2,7 @@ import React from "react";
 import OptionList from "./OptionList";
 import { Button } from "@chakra-ui/react";
 import { GiftIcon, VisitIcon } from "../Icons";
+import ShareSection from "./ShareSection";
 
 const Sidebar = ({ priceDetails, views }) => {
   return (
@@ -24,6 +25,7 @@ const Sidebar = ({ priceDetails, views }) => {
           Kup jako prezent
         </Button>
       </div>
+      <ShareSection />
     </div>
   );
 };
