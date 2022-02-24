@@ -5,6 +5,7 @@ const deals = [
     title: "ESC House",
     slug: "esc-house",
     shortDescription: "Pokój Zagadki Sherlocka Holmesa",
+    views: 34,
     address: {
       city: "Zakopane",
       street: "Kościuszki 3",

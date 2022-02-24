@@ -9,7 +9,7 @@ import AlertDealPage from "../components/DealPage/AlertDealPage";
 import HeadingDealPage from "../components/DealPage/HeadingDealPage";
 import CommentInfo from "../components/DealPage/CommentInfo";
 import Comment from "../components/DealPage/Comment";
-import OptionList from "../components/DealPage/OptionList";
+import Sidebar from "../components/DealPage/Sidebar";
 
 const DealSite = () => {
   const { query } = useRouter();
@@ -37,7 +37,7 @@ const DealSite = () => {
           {comments}
         </div>
         <div className="ml-6 mt-4">
-          <OptionList priceDetails={data.priceDetails} />
+          <Sidebar priceDetails={data.priceDetails} views={data.views} />
         </div>
       </div>
     </div>
