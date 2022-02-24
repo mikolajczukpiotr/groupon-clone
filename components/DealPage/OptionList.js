@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Option from "./Option";
-import { Button, Divider } from "@chakra-ui/react";
+import { Button, Divider, Radio, RadioGroup } from "@chakra-ui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 
 const OptionList = ({ priceDetails }) => {
@@ -10,12 +10,13 @@ const OptionList = ({ priceDetails }) => {
     setShowMoreOptions(!showMoreOptions);
     setOptionList(list);
   };
+
   const options = optionList.map((el) => {
     return <Option key={el.id} data={el} />;
   });
   return (
     <div>
-      {options}
+      <RadioGroup name="option-list">{options}</RadioGroup>
       <div className="flex  justify-center">
         {optionList.length > 3 ? (
           <Button

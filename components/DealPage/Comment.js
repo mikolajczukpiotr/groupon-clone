@@ -3,7 +3,6 @@ import { Box, Button } from "@chakra-ui/react";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import { CommentIcon, LikeIcon, RatingIcon } from "../Icons";
-import { StarIcon } from "@chakra-ui/icons";
 import Stars from "../Stars";
 
 function getFirstLetter(props) {
