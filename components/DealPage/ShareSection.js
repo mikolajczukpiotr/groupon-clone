@@ -21,12 +21,7 @@ const ShareSection = () => {
             setHoverFirstIcon(false);
           }}
         >
-          <FacebookShareIcon
-            h={7}
-            w={7}
-            marginLeft={4}
-            color={hoverFirstIcon ? "#0070cc" : "#A5A8AB"}
-          />
+          <FacebookShareIcon color={hoverFirstIcon ? "#0070cc" : "#A5A8AB"} />
         </div>
         <div
           onMouseEnter={() => {
@@ -36,12 +31,7 @@ const ShareSection = () => {
             setHoverSecondIcon(false);
           }}
         >
-          <PinterestShareIcon
-            h={7}
-            w={7}
-            marginLeft={4}
-            color={hoverSecondIcon ? "#e00038" : "#A5A8AB"}
-          />
+          <PinterestShareIcon color={hoverSecondIcon ? "#e00038" : "#A5A8AB"} />
         </div>
         <div
           onMouseEnter={() => {
@@ -51,12 +41,7 @@ const ShareSection = () => {
             setHoverThirdIcon(false);
           }}
         >
-          <TwitterShareIcon
-            h={7}
-            w={7}
-            marginLeft={4}
-            color={hoverThirdIcon ? "#55acee" : "#A5A8AB"}
-          />
+          <TwitterShareIcon color={hoverThirdIcon ? "#55acee" : "#A5A8AB"} />
         </div>
       </div>
     </div>
