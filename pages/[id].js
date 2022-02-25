@@ -36,7 +36,7 @@ const DealSite = () => {
           <CommentInfo data={data} />
           {comments}
         </div>
-        <div className="ml-6 mt-4 overflow-hidden fixed inset-y-50 right-0">
+        <div className="ml-6 sticky top-5 h-1/3">
           <Sidebar priceDetails={data.priceDetails} views={data.views} />
         </div>
       </div>
