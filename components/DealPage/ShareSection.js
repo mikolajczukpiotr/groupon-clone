@@ -6,42 +6,46 @@ import {
 } from "../Icons";
 
 const ShareSection = () => {
-  const [hoverFirstIcon, setHoverFirstIcon] = useState(false);
-  const [hoverSecondIcon, setHoverSecondIcon] = useState(false);
-  const [hoverThirdIcon, setHoverThirdIcon] = useState(false);
+  const [hoverIcon, setHoverIcon] = useState("");
   return (
     <div className="mt-4">
       <div className="font-bold text-sm">UDOSTĘPNIJ OFERTĘ</div>
       <div className="mt-1 flex">
         <div
           onMouseEnter={() => {
-            setHoverFirstIcon(true);
+            setHoverIcon("firstIcon");
           }}
           onMouseLeave={() => {
-            setHoverFirstIcon(false);
+            setHoverIcon(null);
           }}
         >
-          <FacebookShareIcon color={hoverFirstIcon ? "#0070cc" : "#A5A8AB"} />
+          <FacebookShareIcon
+            color={hoverIcon === "firstIcon" ? "#0070cc" : "#A5A8AB"}
+          />
         </div>
         <div
           onMouseEnter={() => {
-            setHoverSecondIcon(true);
+            setHoverIcon("secondIcon");
           }}
           onMouseLeave={() => {
-            setHoverSecondIcon(false);
+            setHoverIcon(null);
           }}
         >
-          <PinterestShareIcon color={hoverSecondIcon ? "#e00038" : "#A5A8AB"} />
+          <PinterestShareIcon
+            color={hoverIcon === "secondIcon" ? "#e00038" : "#A5A8AB"}
+          />
         </div>
         <div
           onMouseEnter={() => {
-            setHoverThirdIcon(true);
+            setHoverIcon("thirdIcon");
           }}
           onMouseLeave={() => {
-            setHoverThirdIcon(false);
+            setHoverIcon(null);
           }}
         >
-          <TwitterShareIcon color={hoverThirdIcon ? "#55acee" : "#A5A8AB"} />
+          <TwitterShareIcon
+            color={hoverIcon === "thirdIcon" ? "#55acee" : "#A5A8AB"}
+          />
         </div>
       </div>
     </div>
