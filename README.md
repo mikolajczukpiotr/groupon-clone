@@ -5,3 +5,4 @@ Lista TO DO
 - Koszyk z produktami.
 - Responsywna wersja strony.
 - Wyszukiwarka produktów
+
